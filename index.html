@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#061426">
-
+<link rel="manifest" href="manifest.json">
 <title>Rafael R. Martins | Cartão Digital</title>
 
 <style>
@@ -203,5 +203,14 @@ main {
 
 </main>
 
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/rafael-martins/service-worker.js");
+  }
+</script>
+
+</body>
+</html>
 </body>
 </html>
